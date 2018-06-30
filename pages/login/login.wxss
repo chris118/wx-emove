@@ -1,3 +1,4 @@
+@import '../common/weui.wxss';
 @import '../common/index.wxss';
 
 /* pages/login/login.wxss */
