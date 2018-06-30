@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <text class='title'>手机号</text>
+  <input class='mobile-input' placeholder="请输入手机号"/>
+  <text class='title'>验证码</text>
+  <view class="login-verify-wrapper">
+    <input type='number' class='.verify-input' placeholder="请输入验证码"/>
+    <view class='verify-splitter'></view>
+    <view hover-class="verify-btn-hover" class='verify-btn' bindtap="verifyClick">{{timeleft}}         </view>
+  </view>
+   <button style='margin-top: 60rpx'>登录</button>
+
+
+ <navigator url="pages/{{page.url}}" class="navigator">
+                  <view class="navigator-text">12345678</view>
+                  <view class="navigator-arrow">ddd</view>
+                </navigator>
+</view>

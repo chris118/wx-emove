@@ -1,0 +1,12 @@
+/**app.wxss**/
+.container {
+  padding: 0rpx 30rpx;
+  align-items: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #888;
+  background-color: #EDEDED;
+} 
