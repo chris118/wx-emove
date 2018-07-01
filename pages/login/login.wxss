@@ -24,7 +24,7 @@
   background-color: white;
   padding-left: 20rpx;
   padding-right: 20rpx;
-  width: 120rpx;
+  width: 160rpx;
   text-align: center;
 }
 .verify-btn-hover {

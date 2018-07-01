@@ -1,5 +1,5 @@
 <!--pages/login/login.wxml-->
-<view class="container">
+<view class="container container_padding">
   <text class='title'>手机号</text>
   <input class='mobile-input' placeholder="请输入手机号"/>
   <text class='title'>验证码</text>
@@ -26,7 +26,7 @@
                                 </navigator>    
 
 
-<view class="page__bd">
+<view style='width:100%'>
         <view class="weui-cells__title">带说明的列表项</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">

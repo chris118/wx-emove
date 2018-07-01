@@ -1,6 +1,5 @@
 /**app.wxss**/
 .container {
-  padding: 0rpx 30rpx;
   align-items: left;
   min-height: 100vh;
   display: flex;
@@ -10,3 +9,20 @@
   color: #888;
   background-color: #EDEDED;
 } 
+
+.container_padding {
+  padding: 0rpx 30rpx;
+}
+
+page{
+  font-size: 24rpx;
+  color: #888;
+  background-color: #EDEDED;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__hd {
+    padding: 40px;
+}
+.page__bd {
+    padding-bottom: 40px;
+}

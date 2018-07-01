@@ -1,0 +1,36 @@
+/* pages/goods/goods.wxss */
+.goods-root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.goods-content {
+  display: flex;
+  height: calc(100vh - 200rpx);
+  width: 100%;
+}
+.left,
+.right {
+  overflow: auto;
+  height: auto;
+  padding: 1rpx;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  display: none;
+}
+.left {
+  flex: 1;
+  background-color: green;
+}
+.right {
+  flex: 3;
+  background-color: pink;
+}
+.goods-cart {
+  z-index: 1000;
+  height: 200rpx;
+  background-color: yellowgreen;
+}

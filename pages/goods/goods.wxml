@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="goods-root">
+        <view class="goods-content">
+          <view class="left">
+            <view wx:for="{{categories}}" wx:key="*this">{{item}}</view>
+          </view>
+          <view class="right">
+            <view wx:for="{{categories}}" wx:key="*this">{{item}}</view>
+          </view>
+        </view>
+        <view class="goods-cart">
+        </view>
+      </view>
+</view>
