@@ -1,0 +1,8 @@
+<!--components/plus-minus/plus-minus.wxml-->
+<view class="container">
+  <text class="title">{{title}}</text>
+  <view class="btn minus" bindtap="_onMinus" wx:if="{{showMinus}}">-</view>
+  <view class='input-value' wx:if="{{showMinus}}">{{inputValue}}</view>
+  <view class="btn plus" bindtap="_onPlus">+</view>
+</view>
+

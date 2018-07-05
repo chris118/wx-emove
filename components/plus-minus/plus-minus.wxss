@@ -1,0 +1,63 @@
+/* components/plus-minus/plus-minus.wxss */
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+
+.container::after {
+  content: " ";
+  position: absolute;
+  height: 1rpx;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background-color: #E5E5E5;
+}
+
+.title {
+  margin-left: 30rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+
+.btn {
+  background-color:#E1373E;
+  width:40rpx;
+  height:40rpx;
+  line-height:40rpx;
+  color:white;
+  border-radius:40rpx;
+  font-size:28rxp;
+  text-align: center;
+}
+
+.btn:active {
+  background: grey;
+}
+
+.minus {
+  position: absolute;
+  right: 200rpx;
+  top: 20rpx;
+  font-size: 30rpx;
+}
+
+.plus {
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+  font-size: 30rpx;
+  background-color: #0F8EE9;
+}
+
+.input-value {
+  position:absolute;
+  right:70rpx;
+  width:120rpx;
+  height:80rpx;
+  line-height:80rpx;
+  text-align:center;
+}

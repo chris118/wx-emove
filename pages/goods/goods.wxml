@@ -2,13 +2,17 @@
     <view class="goods-root">
         <view class="goods-content">
           <view class="left">
-            <view wx:for="{{categories}}" wx:key="*this">{{item}}</view>
+            <view class="category" wx:for="{{categories}}" wx:key="*this">{{item}}</view>
           </view>
           <view class="right">
-            <view wx:for="{{categories}}" wx:key="*this">{{item}}</view>
+            <block wx:for="{{categories}}" wx:key="*this">
+              <plus-minus class="goods-item" title="{{item}}"></plus-minus>
+            </block>
           </view>
         </view>
         <view class="goods-cart">
+          <view class='cart'></view>
+          <navibar></navibar>
         </view>
       </view>
 </view>

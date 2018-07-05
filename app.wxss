@@ -26,3 +26,8 @@ page{
 .page__bd {
     padding-bottom: 40px;
 }
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}

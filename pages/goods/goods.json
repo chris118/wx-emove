@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents": {
+    "plus-minus": "../../components/plus-minus/plus-minus",
+    "navibar": "../../components/navibar/navibar"
+  }
+}

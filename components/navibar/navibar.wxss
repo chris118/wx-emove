@@ -1,0 +1,22 @@
+/* components/navibar/navibar.wxss */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+  background-color: white;
+}
+
+.navi-btn {
+  height: 80rpx;
+  margin-top: 20rpx;
+  line-height: 80rpx;
+  flex-grow: 1;
+  margin-left: 30rpx;
+  background-color: #0092E0;
+  color: white;
+  font-size: 24rpx;
+}
+
+.navi-btn:active {
+  background: grey;
+}

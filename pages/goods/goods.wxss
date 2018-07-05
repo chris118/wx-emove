@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: white;
 }
 .goods-content {
   display: flex;
-  height: calc(100vh - 200rpx);
+  height: calc(100vh - 240rpx);
   width: 100%;
 }
 .left,
@@ -23,14 +24,41 @@
 }
 .left {
   flex: 1;
-  background-color: green;
 }
 .right {
   flex: 3;
-  background-color: pink;
 }
 .goods-cart {
   z-index: 1000;
-  height: 200rpx;
+  height: 240rpx;
   background-color: yellowgreen;
+}
+
+.goods-item {
+  width: 100%;
+  height: 80rpx;
+}
+
+.category {
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  background-color: #EEEEEE;
+}
+
+.category::after {
+  content: " ";
+  position: absolute;
+  height: 1rpx;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background-color: #E5E5E5;
+}
+
+.cart {
+  height: 120rpx;
 }
