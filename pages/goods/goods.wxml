@@ -11,7 +11,15 @@
           </view>
         </view>
         <view class="goods-cart">
-          <view class='cart'></view>
+          <view class='cart'>
+            <view class="cart-number">
+              <image src="../../static/images/cart.svg" class="cart-image"/>
+              <view class="weui-badge number-bage">8</view>
+            </view>
+            <view class="cart-info">您当前所选物体的总体积</view>
+            <view class="cart-info-number">20</view>
+            <view class="cart-info-number cart-info-number-second">m³</view>
+          </view>
           <navibar></navibar>
         </view>
       </view>

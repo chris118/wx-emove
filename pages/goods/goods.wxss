@@ -1,4 +1,6 @@
 /* pages/goods/goods.wxss */
+@import '../common/weui.wxss';
+
 .goods-root {
   display: flex;
   flex-direction: column;
@@ -24,6 +26,7 @@
 }
 .left {
   flex: 1;
+  border-right: 1rpx #E5E5E5 solid;
 }
 .right {
   flex: 3;
@@ -31,7 +34,6 @@
 .goods-cart {
   z-index: 1000;
   height: 240rpx;
-  background-color: yellowgreen;
 }
 
 .goods-item {
@@ -46,7 +48,7 @@
   line-height: 80rpx;
   text-align: center;
   font-size: 30rpx;
-  background-color: #EEEEEE;
+  background-color: white;
 }
 
 .category::after {
@@ -61,4 +63,50 @@
 
 .cart {
   height: 120rpx;
+  display: flex;
+  border-bottom: 1rpx #E5E5E5 solid;
+}
+
+.cart-number{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-color: #0F8EE9;
+  float: left;
+  margin-left: 30px;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 7;
+}
+
+.cart-info {
+  margin-left: 10px;
+  line-height: 120rpx;
+}
+
+.cart-info-number {
+  font-size: 48rpx;
+  margin-left: 20rpx;
+  line-height: 120rpx;
+  color: #0092E0;
+}
+
+.cart-info-number-second {
+  margin-left: 4rpx;
+}
+
+.number-bage {
+  position:absolute;
+  top:0rpx;
+  right:0rpx;
+}
+
+.cart-image {
+  display:block;
+  width:80rpx;
+  height:80rpx;
+  position:absolute;
+  top:30rpx;
+  left:30rpx;
 }

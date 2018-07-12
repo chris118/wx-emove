@@ -1,10 +1,10 @@
 button {
-  width:100%; 
+  width:100%;
   background-color:#148FEE;
-  height: 60rpx;
-  line-height: 60rpx;
-  color: white;
-  font-size: 24rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:white;
+  font-size:24rpx;
 }
 input {
   background-color: white;
@@ -14,5 +14,4 @@ input {
 .weui-cell {
   width: calc(100% - 60rpx);
   background: white;
-
 }

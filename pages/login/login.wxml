@@ -12,7 +12,7 @@
 
 
 
-   <navigator  class="weui-cell weui-cell_access">
+   <!-- <navigator  class="weui-cell weui-cell_access">
                                     <view class="weui-cell__bd">ddddddd</view>
                                     <view class="weui-cell__ft weui-cell__ft_in-access">aaaa</view>
                                 </navigator>
@@ -23,10 +23,10 @@
                                    <navigator url="{{page}}/{{page}}" class="weui-cell weui-cell_access">
                                     <view class="weui-cell__bd">ddddddd</view>
                                     <view class="weui-cell__ft weui-cell__ft_in-access">aaaa</view>
-                                </navigator>    
+                                </navigator>     -->
 
 
-<view style='width:100%'>
+<!-- <view style='width:100%'>
         <view class="weui-cells__title">带说明的列表项</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
@@ -94,7 +94,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
         </view>
-    </view>
+    </view> -->
 
 
 
