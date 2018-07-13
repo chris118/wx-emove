@@ -1,5 +1,5 @@
 @import '../common/weui.wxss';
-@import '../common/index.wxss';
+@import '../common/common.wxss';
 
 /* pages/login/login.wxss */
 .title {
