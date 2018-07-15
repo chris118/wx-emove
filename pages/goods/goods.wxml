@@ -20,7 +20,7 @@
             <view class="cart-info-number">20</view>
             <view class="cart-info-number cart-info-number-second">m³</view>
           </view>
-          <navibar></navibar>
+          <navibar bindonPrevious="onPrevious" bindonNext="onNext"></navibar>
         </view>
       </view>
 </view>

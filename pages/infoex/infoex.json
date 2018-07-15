@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+      "navibar": "../../components/navibar/navibar"
+    }
+}

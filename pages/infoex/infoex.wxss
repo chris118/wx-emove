@@ -1,0 +1,8 @@
+/* pages/infoex/infoex.wxss */
+@import '../common/weui.wxss';
+@import '../common/common.wxss';
+
+.navi {
+  position: absolute;
+  bottom: 0rpx;
+}

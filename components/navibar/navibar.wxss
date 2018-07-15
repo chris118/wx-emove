@@ -4,6 +4,7 @@
   flex-direction: row;
   height: 120rpx;
   background-color: white;
+  width: 100vw;
 }
 
 .navi-btn {

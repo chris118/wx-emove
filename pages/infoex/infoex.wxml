@@ -1,0 +1,68 @@
+<view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+<view class="weui-cells__title">请在下方填写您的搬出地址</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">选择日期</view>
+      </view>
+      <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+              <view class="weui-select">{{date}}</view>
+          </picker>
+      </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">选择时段</view>
+    </view>
+    <view class="weui-cell__bd">
+        <picker bindchange="bindDurationChange" value="{{duration_index}}" range="{{duration}}">
+            <view class="weui-select">{{duration[duration_index]}}</view>
+        </picker>
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title">请在下方填写负责人的联系方式</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">负责人</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input"/>
+        </view>
+    </view>
+  <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">手机号码</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input"/>
+        </view>
+    </view>
+</view>
+<view class="weui-cells__title">备注(非必填)</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 6em" />
+                </view>
+            </view>
+        </view>
+</view>
+
+<view class="weui-cell weui-cell_select" style='background-color:white; margin-top:20rpx; height: 88rpx'>
+  <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">是否需要发票</view>
+  </view>
+  <view class="weui-cell__bd">
+      <picker bindchange="bindInvoiceChange" value="{{invoice_index}}" range="{{invoice}}">
+          <view class="weui-select">{{invoice[invoice_index]}}</view>
+      </picker>
+  </view>
+</view>
+<navibar class='navi' bindonPrevious="onPrevious" bindonNext="onNext"></navibar>
+
+
+

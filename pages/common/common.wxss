@@ -1,5 +1,4 @@
 button {
-  width:100%;
   background-color:#148FEE;
   height:80rpx;
   line-height:80rpx;
@@ -10,12 +9,27 @@ input {
   background-color: white;
   padding: 10rpx;
 }
-
-.weui-cell {
-  width: calc(100% - 60rpx);
-  background: white;
+picker {
+  text-align: right;
 }
 
+.submit-btn {
+  position: absolute;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  bottom: 50rpx;
+  width: calc(100vw - 60rpx);
+}
+
+.weui-select {
+  text-align: right;
+}
 .weui-cells__title {
+  height: 80rpx;
   text-align: center;
+  margin-top: 0rpx;
+  line-height: 80rpx;
+}
+.weui-cells {
+  font-size: 28rpx;
 }

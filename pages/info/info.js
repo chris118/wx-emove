@@ -5,62 +5,50 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    showTopTips: false,
+    elevator_out: ["有", "无"],
+    elevator_out_index: 0,
+    assemble_out: ["需要", "不需要"],
+    assemble_out_index: 0,
+    elevator_in: ["有", "无"],
+    elevator_in_index: 0,
+    assemble_in: ["需要", "不需要"],
+    assemble_in_index: 0,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  bindElevatorOutChange: function (e) {
+    this.setData({
+      elevator_out_index: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  bindAssembleOutChange: function (e) {
+    this.setData({
+      assemble_out_index: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  bindElevatorInChange: function (e) {
+    this.setData({
+      elevator_in_index: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
+  bindAssembleInChange: function (e) {
+    this.setData({
+      assemble_in_index: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
+  next: function(e) {
+    wx.navigateTo({
+      url: '../goods/goods'
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
+  showTopTips: function () {
+    var that = this;
+    this.setData({
+      showTopTips: true
+    });
+    setTimeout(function () {
+      that.setData({
+        showTopTips: false
+      });
+    }, 3000);
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })

@@ -1,5 +1,5 @@
 <!--components/navibar/navibar.wxml-->
 <view class='container'>
-  <button class="navi-btn">上一步</button>
-  <button class='navi-btn' style='margin-right: 30rpx'>下一步</button>
+  <button class="navi-btn" bindtap="onPrevious">上一步</button>
+  <button class='navi-btn' style='margin-right: 30rpx' bindtap="onNext">下一步</button>
 </view>

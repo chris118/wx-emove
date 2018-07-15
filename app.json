@@ -1,15 +1,17 @@
 {
   "pages": [
-    "pages/info/info",
+    "pages/vehicle/vehicle",
     "pages/goods/goods",
+    "pages/infoex/infoex",
     "pages/login/login",
+    "pages/info/info",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#1287DE",
-    "navigationBarTitleText": "e",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#148FEE",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "e搬家"
   }
 }

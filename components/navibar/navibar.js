@@ -18,6 +18,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onPrevious: function () {
+      this.triggerEvent('onPrevious', {}, {})
+    },
+    onNext: function () {
+      this.triggerEvent('onNext', {}, {})
+    }
   }
 })
