@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "dropmenu": "../../components/dropmenu/dropmenu"
+    "dropmenu": "../../components/dropmenu/dropmenu",
+    "navibar": "../../components/navibar/navibar"
   }
 }

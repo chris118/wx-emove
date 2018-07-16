@@ -43,8 +43,8 @@ Page({
     })
   },
   onNext: function (e) {
-    // wx.navigateTo({
-    //   url: '../infoex/infoex'
-    // })
+    wx.navigateTo({
+      url: '../vehicle/vehicle'
+    })
   }
 })

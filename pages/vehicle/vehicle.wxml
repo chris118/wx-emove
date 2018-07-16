@@ -1,4 +1,4 @@
-<dropmenu menu_data="{{['订单最多','评分最高','离我最近']}}"></dropmenu>
+<dropmenu class='menu' menu_data="{{['订单最多','评分最高','离我最近']}}"></dropmenu>
 <view class="vehicle-container">
   <view wx:for="{{vehicles}}" wx:key="*this" wx:for-index="index" wx:for-item="item">
     <view class="vehicle-item-root">
@@ -30,3 +30,4 @@
     </view>
   </view>
 </view>
+<navibar class='navi' bindonPrevious="onPrevious" bindonNext="onNext"></navibar>

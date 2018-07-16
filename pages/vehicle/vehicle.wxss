@@ -1,7 +1,14 @@
+.menu {
+    position: fixed;
+  top: 0rpx;
+  width: 100%;
+  z-index: 1000;
+}
 .vehicle-container {
   position: absolute;
-  top: 80rpx;
-  height: 100%;
+  top: 75rpx;
+  bottom: 120rpx;
+  height: calc(100vh -120rpx - 75rpx);
   width: 100%;
 }
 
@@ -96,3 +103,8 @@
   margin: 2rpx;
   cursor: pointer;
 }/*五角星样式*/
+
+.navi {
+  position: fixed;
+  bottom: 0rpx;
+}

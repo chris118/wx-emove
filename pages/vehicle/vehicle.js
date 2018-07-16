@@ -7,4 +7,14 @@ Page({
   onLoad: function () {
 
   },
+  onPrevious: function (e) {
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+  onNext: function (e) {
+    wx.navigateTo({
+      // url: '../vehicle/vehicle'
+    })
+  }
 })
