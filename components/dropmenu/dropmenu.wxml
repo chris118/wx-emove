@@ -1,0 +1,23 @@
+<view class="content-container">
+   <view class="pick-header-wrapper">
+    <view class="pick-header" bindtap="onPickHeaderClick">{{menu_data[selected_index]}}</view> 
+    <view class="splitter"></view>
+    <view class="down-arrow {{needAnimation ? (openPicker ? 'down-arrow.active' : 'down-arrow') : ''}}"></view> 
+  </view> 
+
+  <view class="pick-container {{needAnimation ? (openPicker ? 'slidown' : 'slidup') : ''}}" >
+  <view class="weui-cells weui-cells_after-title">
+      <label class="weui-cell weui-check__label" wx:for="{{menu_data}}" wx:key="*this" wx:for-index="index" wx:for-item="item" bindtap='menu_item_tap' data-index="{{index}}">
+              <view class="weui-cell__bd">{{item}}</view>
+              <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{index == selected_index}}">
+                  <icon class="weui-icon-radio" type="success_no_circle" color='#148FEE' size="16"></icon>
+              </view>
+        </label>
+    </view>
+    <!-- <view wx:for="{{menu_data}}" wx:for-index="i" wx:for-item="itemName">
+      {{itemName}}
+    </view> -->
+  </view>
+
+  <view class="shadow" hidden="{{!openPicker}}">我是半透明阴影遮罩 view shadow  z-index:40</view>
+</view>

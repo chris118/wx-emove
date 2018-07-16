@@ -1,4 +1,7 @@
+
 /**index.wxss**/
+@import '../common/weui.wxss';
+
 .userinfo {
   display: flex;
   flex-direction: column;

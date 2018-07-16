@@ -1,0 +1,128 @@
+@import '../../pages/common/weui.wxss';
+@import '../../pages/common/common.wxss';
+
+/*根布局*/
+.content-container {
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px #F5F5F5 solid;
+}
+
+/*筛选头部*/
+.pick-header {
+  height: 72rpx;
+  z-index: 60;
+  line-height: 72rpx;
+  text-align: right;
+  flex-grow: 2;
+  background-color: white;
+  font-size: 28rpx;
+}
+
+.pick-header-wrapper {
+  display:flex;
+  flex-direction:row;
+}
+
+.splitter {
+  width:2rpx;
+  background-color:#888;
+  position:absolute;
+  right:207rpx;
+  z-index:60;
+  height:25rpx;
+  margin-top:24rpx;
+}
+
+.down-arrow {
+   display:inline-block;
+    position:relative;
+    width:36rpx;
+    height:72rpx;
+    z-index:60;
+    background-color:white;
+    padding-left:20rpx;
+    padding-right:20rpx
+}
+
+ .down-arrow::after {
+    display: inline-block;
+    content: " ";
+    height: 18rpx;
+    width: 18rpx;
+    border-width: 0 2rpx 2rpx 0;
+    border-color: #888;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform-origin: center;
+    transition: transform .3s;
+    position: absolute;
+    top: 25%;
+}
+
+.down-arrow.active::after {
+    transform-origin: center;
+    transform: rotate(-135deg);
+    transition: transform .3s;
+    top: 40%;
+} 
+
+/*筛选项容器布局*/
+.pick-container {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 50;
+  transform:translate(0rpx,-100%)
+}
+
+/*筛选项隐藏 显示动画 start*/
+@keyframes slidown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.slidown {
+  display: block;
+  animation: slidown 0.1s ease-in both;
+}
+
+@keyframes slidup {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.slidup {
+  display: block;
+  animation: slidup 0.2s ease-in both;
+}
+/*筛选项隐藏 显示动画 end*/
+
+/*筛选项显示出来的时候的阴影*/
+.shadow {
+  width: 100%;
+  background-color: rgba(1, 1, 1, 0.2);
+  position: absolute;
+  z-index: 40;
+  height: 100vh;
+  top: 72rpx;
+}
+
+/*内容容器布局*/
+.content {
+  width: 100%;
+  position: absolute;
+  top: 72rpx;
+  z-index: 20;
+}
+

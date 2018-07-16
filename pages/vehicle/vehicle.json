@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "dropmenu": "../../components/dropmenu/dropmenu"
+  }
+}

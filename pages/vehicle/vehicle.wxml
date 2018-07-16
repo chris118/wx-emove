@@ -1,13 +1,32 @@
-<view class="content-container">
-  <view class="pick-header" bindtap="onPickHeaderClick">
-    筛选pick-header view z-index:60
+<dropmenu menu_data="{{['订单最多','评分最高','离我最近']}}"></dropmenu>
+<view class="vehicle-container">
+  <view wx:for="{{vehicles}}" wx:key="*this" wx:for-index="index" wx:for-item="item">
+    <view class="vehicle-item-root">
+      <view class="top">
+        <view class="top-left">
+          <image class="item-icon" mode="aspectFill" src="http://www.ebanjia.cn/statics/front/images/article-thumbnail.png"></image>
+
+        </view>
+        <view class="top-center">
+          <view class="vehicle-name">ddddddddddd</view>
+          <view class="vehicle-info">
+            <view class="vehicle-star" wx:for="{{5}}" wx:key="*this" wx:for-index="index" wx:for-item="item" style='color:#FDC02E;'>★</view>
+            <view>(1次点评)</view>
+          </view>
+          <view class="vehicle-info">111, 距离您 222km</view>
+        </view>
+        <view class="top-right">
+          <view class="vehicle-check">
+            <icon  class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{false}}"></icon>
+            <icon color='#148FEE' class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{true}}"></icon>
+          </view>
+          <view class="vehicle-time">仅剩车次0</view>
+        </view>
+      </view>
+      <view class="bottom">
+        <view class="vehicle-h">惠</view>
+        <view class="vehicle-i">参与砍价活动, 该车队最低可砍至8折</view>
+      </view>
+    </view>
   </view>
-
-  <view class="pick-container {{needAnimation ? (openPicker ? 'slidown' : 'slidup') : ''}}" >
-    筛选项 pick-container view z-index:50
-  </view>
-
-  <view class="shadow" style="height:{{contentHeight}}px;line-height:{{contentHeight}}px" hidden="{{!openPicker}}">我是半透明阴影遮罩 view shadow  z-index:40</view>
-
-
 </view>

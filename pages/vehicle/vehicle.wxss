@@ -1,73 +1,98 @@
-/*根布局*/
-.content-container {
-width: 100%;
-position: absolute;
-}
-
-/*筛选头部*/
-.pick-header {
-  width: 100%;
-  height: 72rpx;
-  z-index: 60;
-  position: fixed;
- background-color: lightcoral;
-}
-
-/*筛选项容器布局*/
-.pick-container {
-  width: 100%;
-  height: 300rpx;
-  background-color: lightgoldenrodyellow;
+.vehicle-container {
   position: absolute;
-  z-index: 50;
-  top: -228rpx;
-}
-
-/*筛选项隐藏 显示动画 start*/
-@keyframes slidown {
-  from {
-    transform: translateY(0%);
-  }
-
-  to {
-    transform: translateY(100%);
-  }
-}
-
-.slidown {
-  display: block;
-  animation: slidown 0.1s ease-in both;
-}
-
-@keyframes slidup {
-  from {
-    transform: translateY(100%);
-  }
-
-  to {
-    transform: translateY(0%);
-  }
-}
-
-.slidup {
-  display: block;
-  animation: slidup 0.2s ease-in both;
-}
-/*筛选项隐藏 显示动画 end*/
-
-/*筛选项显示出来的时候的阴影*/
-.shadow {
+  top: 80rpx;
+  height: 100%;
   width: 100%;
-  background-color: rgba(1, 1, 1, 0.2);
-  position: absolute;
-  z-index: 40;
-  top: 72rpx;
 }
 
-/*内容容器布局*/
-.content {
-  width: 100%;
-  position: absolute;
-  top: 72rpx;
-  z-index: 20;
+.vehicle-item-root {
+  height: 330rpx;
+  background-color: white;
+  border-bottom: 36rpx #F5F5F5 solid;
 }
+
+.top {
+  display: flex;
+  height: 220rpx;
+  border-bottom: 0.2rpx solid #F5F5F5;
+  margin-left: 20rpx;
+}
+
+.top-left {
+  width: 230rpx;
+}
+
+.top-center {
+  flex:4;
+}
+
+.top-right {
+  display: flex;
+  flex:2;
+  margin-right: 30rpx;
+  flex-direction: column;
+}
+
+.item-icon {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 26rpx 30rpx 26rpx 20rpx;
+}
+
+.vehicle-name {
+  font-size: 36rpx;
+  margin-top: 30rpx;
+  margin-bottom: 16rpx;
+}
+
+.vehicle-info {
+  display: flex;
+  color: #CDCDCD;
+  margin-bottom: 16rpx;
+}
+
+.vehicle-check {
+  position: absolute;
+  right: 40rpx;
+  margin-top: 40rpx;
+}
+.vehicle-time {
+  margin-top: 120rpx;
+  text-align: right;
+  margin-right: 10rpx;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+
+.vehicle-h{
+  background-color: #FDC02E;
+  margin-right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 4rpx;
+}
+
+.vehicle-i {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.vehicle-star {
+  margin: 0rpx;
+  padding: 0rpx;
+}
+
+.vehicle-star{
+  list-style: none;
+  float: left;
+  font-size: 24rpx;
+  margin: 2rpx;
+  cursor: pointer;
+}/*五角星样式*/
