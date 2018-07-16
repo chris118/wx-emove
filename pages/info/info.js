@@ -15,6 +15,10 @@ Page({
     elevator_in_index: 0,
     assemble_in: ["需要", "不需要"],
     assemble_in_index: 0,
+    showSearchLocation: false,
+    locations: [],
+    searchPlaceholder:'',
+    inputValue: '',
   },
   bindElevatorOutChange: function (e) {
     this.setData({
@@ -36,13 +40,35 @@ Page({
       assemble_in_index: e.detail.value
     })
   },
+  bindOutAddressTap: function (e) {
+    this.setData({
+      showSearchLocation: true,
+      searchPlaceholder: "请在此填写您的搬出地址",
+    })
+  },
+  bindInAddressTap: function (e) {
+    this.setData({
+      showSearchLocation: true,
+      searchPlaceholder: "请在此填写您的搬入地址",
+    })
+  },
   next: function(e) {
     wx.navigateTo({
       url: '../goods/goods'
     })
   },
+  cancel: function(e) {
+    this.setData({
+      inputValue: '',
+      locations: [],
+      showSearchLocation: false,
+    })
+  },
   bindKeyInput: function (e) {
     var that = this;
+    this.setData({
+      inputValue: e.detail.value
+    })
     if (e.detail.value === '') {
       that.setData({
         sugData: ''
@@ -56,12 +82,9 @@ Page({
       console.log(data)
     };
     var success = function (data) {
-      var sugData = '';
-      for (var i = 0; i < data.result.length; i++) {
-        sugData = sugData + data.result[i].name + '\n';
-      }
+      console.log(data.result)
       that.setData({
-        sugData: sugData
+        locations: data.result
       });
     }
     BMap.suggestion({

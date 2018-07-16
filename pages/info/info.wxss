@@ -1,3 +1,30 @@
 /* pages/info/info.wxss */
 @import '../common/weui.wxss';
 @import '../common/common.wxss';
+
+.map-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.cancel-btn {
+  color: #148FEE;
+}
+.cancel-btn:active {
+  color: grey;
+}
+.location-item {
+  height: 60rpx;
+  padding-left: 30rpx;
+  line-height: 60rpx;
+}
+
+.location-item:after {
+  position: relative;
+  height: 0.1rpx solid #E5E5E5
+
+}
