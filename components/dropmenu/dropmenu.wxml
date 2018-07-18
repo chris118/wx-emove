@@ -7,7 +7,7 @@
 
   <view class="pick-container {{needAnimation ? (openPicker ? 'slidown' : 'slidup') : ''}}" >
   <view class="weui-cells weui-cells_after-title">
-      <label class="weui-cell weui-check__label" wx:for="{{menu_data}}" wx:key="*this" wx:for-index="index" wx:for-item="item" bindtap='menu_item_tap' data-index="{{index}}">
+      <label class="weui-cell cell-height weui-check__label" wx:for="{{menu_data}}" wx:key="*this" wx:for-index="index" wx:for-item="item" bindtap='menu_item_tap' data-index="{{index}}">
               <view class="weui-cell__bd">{{item}}</view>
               <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{index == selected_index}}">
                   <icon class="weui-icon-radio" type="success_no_circle" color='#148FEE' size="16"></icon>

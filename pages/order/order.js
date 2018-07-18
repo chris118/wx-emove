@@ -14,7 +14,7 @@ Page({
   },
   onNext: function (e) {
     wx.navigateTo({
-      // url: '../order/order'
+      url: '../orderlist/orderlist'
     })
   }
 })

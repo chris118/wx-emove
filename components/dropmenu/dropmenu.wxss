@@ -126,3 +126,7 @@
   z-index: 20;
 }
 
+.cell-height {
+  min-height: 20rpx;
+}
+

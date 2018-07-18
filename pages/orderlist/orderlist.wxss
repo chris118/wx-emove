@@ -1,0 +1,92 @@
+/* pages/orderlist/orderlist.wxss */
+@import '../common/weui.wxss';
+@import '../common/common.wxss';
+
+.list-container {
+  position: absolute;
+  top: 74rpx;
+  width: 100%;
+  margin-bottom:90rpx;
+}
+.orderitem-root {
+  display: flex;
+  flex-direction: column;
+  height: 265rpx;
+  background-color: white;
+  border-bottom: 36rpx  #F5F5F5 solid;
+}
+.orderitem-sub{
+  display: flex;
+  padding-left: 30rpx;
+}
+.orderitem-sub1{
+    display: flex;
+  padding-left: 30rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+    margin-bottom: 20rpx;
+
+}
+
+.orderitem-title {
+  margin-right: 10rpx;
+}
+.orderitem-status {
+  position: absolute;
+  right: 30rpx;
+  color: #0092E0;
+}
+
+.orderitem-detai-btn {
+  display: flex;
+  position: absolute;
+  right: 0rpx;
+}
+
+.orderitem-time {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.orderitem-time-value {
+  color: #0092E0;
+}
+
+.orderitem-kanjia-btn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: white;
+  background-color: #FDC02E;
+  margin-right: 20rpx;
+}
+
+.orderitem-kanjia-btn:active {
+  background-color: grey;
+}
+
+.orderitem-kanjia-btn-blue {
+    background-color: #0092E0;
+}
+
+.submit-btn {
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  background-color: #0092E0;
+  bottom: 0rpx;
+  top: 20rpx;
+}
+
+.submit-cell {
+  width: 100%;
+  height: 120rpx;
+  background-color: white;
+  position: fixed;
+  bottom: 0rpx;
+  border-top: 0.2rpx solid #CDCDCD;
+}
