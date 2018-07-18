@@ -6,7 +6,6 @@ button {
   font-size:24rpx;
 }
 input {
-  background-color: white;
   padding: 10rpx;
 }
 picker {
@@ -25,11 +24,19 @@ picker {
   text-align: right;
 }
 .weui-cells__title {
-  height: 80rpx;
+  height: 60rpx;
   text-align: center;
   margin-top: 0rpx;
-  line-height: 80rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
 }
 .weui-cells {
   font-size: 28rpx;
 }
+.weui-cell {
+  min-height: 80rpx;
+}
+.weui-cell-1 {
+  padding: 0rpx 30rpx;
+}
+

@@ -1,0 +1,125 @@
+<view class='root'>
+  <view class="weui-cells__title cells__title-1">基础信息</view>
+  <view class="weui-cells weui-cells-1 weui-cells_after-title">
+    <view class="weui-cell weui-cell-1">
+      <view class=".row-2-column">
+        <view class="left-wrapper-splitter">
+          <view class='left-content' style='min-width:80rpx'>姓名: </view>
+          <view class='right-content'>111111111111</view>
+        </view>
+        <view class="right-wrapper">
+          <view class='left-content' style='min-width:80rpx'>电话: </view>
+          <view class='right-content'>11111111111111</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell-1">
+      <view class="row-1-column">
+        <view class='left-content'>搬家时间: </view>
+        <view class='right-content' style='color:#148FEE'>111111111111</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell-1">
+      <view class="row-1-column">
+        <view class='left-content'>搬出地址: </view>
+        <view class='right-content'>111111111111</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell-1">
+      <view class="row-1-column">
+        <view class='left-content'>搬入地址: </view>
+        <view class='right-content'>111111111111</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell-1 ">
+      <view class="row-1-column">
+        <view class='left-content'>发票需求: </view>
+        <view class='right-content'>111111111111</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell-1">
+      <view class="row-1-column">
+        <view class='left-content'>客户备注: </view>
+        <view class='right-content'>111111111111111111111111111111111111111111111111111111111111</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__title cells__title-1">服务车队信息</view>
+  <view class="weui-cells weui-cells-1 weui-cells_after-title">
+    <view class="weui-cell weui-cell-1">
+
+      <view class=".row-2-column">
+        <view class="left-wrapper-splitter">
+          <view class='left-content'>车队名称: </view>
+          <view class='right-content'>111111111111111111111111111111111</view>
+        </view>
+        <view class="left-wrapper-splitter">
+          <view class='left-content'>联系电话: </view>
+          <view class='right-content'>11111111111</view>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell-start">
+        <view class="row-1-column">
+          <view class='left-content'>车队地址: </view>
+          <view class='right-content'>1111111111</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__title cells__title-1">基础收费项目</view>
+  <view class="weui-cells weui-cells-1 weui-cells_after-title">
+    <block wx:for="{{[1, 2, 3]}}">
+      <view class="weui-cell weui-cell-start">
+        <view class=".row-2-column">
+          <view class="left-wrapper-splitter">
+            <view class='right-content text-center' style='padding-right:10rpx;'>111111111111111111111111111111111</view>
+          </view>
+          <view class="left-wrapper-splitter">
+            <view class='right-content text-center' style='padding-right:10rpx;padding-left:10rpx;'>111111111111111111111111111111111</view>
+          </view>
+          <view class="right-wrapper">
+            <view class='right-content text-center' style='padding-left:10rpx;'>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="weui-cells__title cells__title-1">贵重物品收费</view>
+  <view class="weui-cells weui-cells-1 weui-cells_after-title">
+    <block wx:for="{{[1, 2, 3]}}">
+      <view class="weui-cell weui-cell-start">
+        <view class=".row-2-column">
+          <view class="left-wrapper-splitter">
+            <view class='right-content text-center' style='padding-right:10rpx;'>111111111111111111111111111111111</view>
+          </view>
+          <view class="left-wrapper-splitter">
+            <view class='right-content text-center' style='padding-right:10rpx;padding-left:10rpx;'>111111111111111111111111111111111</view>
+          </view>
+          <view class="right-wrapper">
+            <view class='right-content text-center' style='padding-left:10rpx;'>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="weui-cells__title cells__title-1">总计</view>
+  <view class="weui-cells weui-cells-1 weui-cells_after-title">
+    <block wx:for="{{[1, 2, 3]}}">
+      <view class="weui-cell weui-cell-start">
+        <view class=".row-2-column">
+          <view class="left-wrapper-splitter">
+            <view class='right-content text-center' style='padding-right:10rpx;'>111111111111111111111111111111111</view>
+          </view>
+          <view class="left-wrapper-splitter">
+            <view class='right-content text-center' style='padding-right:10rpx;padding-left:10rpx;'>11</view>
+          </view>
+          <view class="right-wrapper">
+            <view class='right-content text-center' style='padding-left:10rpx;'>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<navibar class='navi' nextTitle='提交订单' bindonPrevious="onPrevious" bindonNext="onNext"></navibar>

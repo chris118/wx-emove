@@ -47,7 +47,7 @@
 }
 
 .vehicle-name {
-  font-size: 36rpx;
+  font-size: 32rpx;
   margin-top: 30rpx;
   margin-bottom: 16rpx;
 }

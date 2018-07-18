@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "e搬家客服热线400-400-6688",
+
+  "usingComponents": {
+    "navibar": "../../components/navibar/navibar"
+  }
+}

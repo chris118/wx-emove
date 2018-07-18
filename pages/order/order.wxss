@@ -1,0 +1,70 @@
+/* pages/order/order.wxss */
+@import '../common/weui.wxss';
+@import '../common/common.wxss';
+
+.root {
+  margin-bottom: 120rpx;
+}
+.left-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.left-wrapper-splitter {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+ .left-wrapper-splitter::after {
+    content: "";
+    width: 3rpx;
+    height: 40rpx;
+    background: #CDCDCD;
+    margin-right: 10rpx;
+} 
+
+.right-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.left-content {
+  min-width: 90rpx;
+}
+
+.right-content {
+  width:100%;
+  word-break: break-word;
+}
+
+.row-2-column {
+  width:100%;
+  display: flex;
+  align-items: flex-start; 
+}
+
+.row-1-column {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navi {
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.weui-cells-1 {
+  font-size: 20rpx;
+}
+
+.cells__title-1{
+  font-size: 20rpx;
+}

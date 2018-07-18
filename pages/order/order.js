@@ -1,11 +1,11 @@
-// pages/vehicle/vehicle.js
+// pages/order/order.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    vehicles: [1,2,3,4,5],
-  },
-
-  onLoad: function () {
-
+  
   },
   onPrevious: function (e) {
     wx.navigateBack({
@@ -14,7 +14,7 @@ Page({
   },
   onNext: function (e) {
     wx.navigateTo({
-      url: '../order/order'
+      // url: '../order/order'
     })
   }
 })
